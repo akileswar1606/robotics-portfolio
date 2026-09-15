@@ -15,6 +15,7 @@ export const PROFILE = {
   email: "akileswarpa@gmail.com",
   linkedin: "https://www.linkedin.com/in/akileswarpa/",
   github: "https://github.com/akileswar1606",
+  whatsapp: "+91 9342718131",
   location: "Kanyakumari District / Chennai, India",
   portfolio: "https://akileswar1606.github.io/Akileswar/",
 };
