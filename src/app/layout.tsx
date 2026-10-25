@@ -14,8 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AKILESWAR P A | Robotics & Control Systems Engineer",
-  description: "Portfolio of Akileswar P A, a Robotics Engineer specializing in Industrial Automation, ROS2, and PLC systems.",
+  title: "AKILESWAR P A | Automation & Robotics Engineer",
+  description:
+    "Portfolio of Akileswar P A — Automation & Robotics Engineer specializing in Industrial Robotics (ABB, FANUC), Beckhoff TwinCAT 3 PLC, EtherCAT, and ROS 2.",
 };
 
 export default function RootLayout({
@@ -25,7 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased selection:bg-cyber-blue selection:text-black`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased selection:bg-cyber-blue selection:text-black`}
+      >
         <Navbar />
         <main>{children}</main>
       </body>
