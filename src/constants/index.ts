@@ -1,3 +1,5 @@
+import { getAssetPath } from "@/lib/utils";
+
 export const NAV_LINKS = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
@@ -17,8 +19,8 @@ export const PROFILE = {
   github: "https://github.com/akileswar1606",
   whatsapp: "+91 93614 45784",
   location: "Kanyakumari, Tamil Nadu, India",
-  portfolio: "https://akileswar1606.github.io/Akileswar/",
-  image: "/images/akileswar-fanuc.jpg",
+  portfolio: "https://akileswar1606.github.io/robotics-portfolio/",
+  image: getAssetPath("/images/akileswar-fanuc.jpg"),
 };
 
 export const CERTIFICATIONS = [

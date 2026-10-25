@@ -1,5 +1,6 @@
 import { HeroSection } from "@/components/sections/HeroSection";
 import { PROFILE } from "@/constants";
+import { getAssetPath } from "@/lib/utils";
 import { ArrowRight, Cpu, Network, Radio, ShieldCheck, Target, Terminal } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -84,7 +85,7 @@ export default function Home() {
         {/* Real Work Photo Card */}
         <div className="relative aspect-[4/5] glass rounded-3xl overflow-hidden border-white/10 group">
           <Image
-            src={PROFILE.image}
+            src={getAssetPath(PROFILE.image)} unoptimized
             alt="Akileswar P A commissioning FANUC industrial robot"
             fill
             className="object-cover object-top transition-transform duration-700 group-hover:scale-105"

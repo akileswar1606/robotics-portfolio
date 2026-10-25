@@ -1,4 +1,5 @@
 import { CERTIFICATIONS, EDUCATION, PROFILE } from "@/constants";
+import { getAssetPath } from "@/lib/utils";
 import { Award, BookOpen, CheckCircle, ExternalLink, Fingerprint, MapPin, ShieldCheck, Terminal, User } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -45,7 +46,7 @@ export default function AboutPage() {
           <div className="glass p-3 rounded-3xl border-white/10 relative overflow-hidden group">
             <div className="relative aspect-[3/4] w-full rounded-2xl overflow-hidden bg-black/40">
               <Image
-                src={PROFILE.image}
+                src={getAssetPath(PROFILE.image)} unoptimized
                 alt="Akileswar P A programming FANUC industrial robot with teach pendant"
                 fill
                 className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
